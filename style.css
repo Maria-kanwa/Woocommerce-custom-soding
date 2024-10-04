@@ -1,0 +1,917 @@
+/*
+Theme Name:university system
+Theme URI:http://www.icodeguru.pk
+Author: Maria kanwal
+version:1.0
+Author URI:http://www.icodeguru.pk
+description:hello icodeguru
+*/
+
+
+.logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 45px;
+    margin-right: 25px;
+    margin-top: 10px;
+
+  }
+  .site title h1{
+    font-size: 30px;
+    margin-bottom: 200px;
+    margin-left: 200px;
+    
+  } 
+  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    
+}
+
+
+/* Header Styles */
+header {
+    background-color: #160447;
+    color: white;
+    padding: 10px 0;
+}
+header h1 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+
+
+.navbar-2 {
+    text-align: right;
+    margin-top: 25px;
+    margin-left: 100px;
+    
+}
+
+.navbar-2 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar-2 ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navbar-2 ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Banner Styles */
+.banner {
+    background: url('banner.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.banner h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.banner p {
+    font-size: 1.5em;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #160447;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .banner h2 {
+        font-size: 2em;
+    }
+
+    .banner p {
+        font-size: 1em;
+    }
+}
+
+
+
+/* Homepage Styles */
+
+
+/* General grid layout for hostel room cards */
+
+
+
+.cafe-menu-price {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007cba;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.add-to-cart:hover {
+    background-color: #005a8a;
+}
+
+/* Container styling */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Grid layout for cafe menu items */
+.cafe-menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual cafe menu item styling */
+.cafe-menu-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.cafe-menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Thumbnail styling */
+.cafe-menu-thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Title styling */
+.cafe-menu-title {
+    font-size: 1.5em;
+    margin: 10px;
+    color: #333;
+}
+
+/* Content styling */
+.cafe-menu-content {
+    font-size: 1em;
+    color: #666;
+    margin: 10px;
+}
+
+/* Price styling */
+.cafe-menu-price {
+    font-size: 1.2em;
+    color: #007cba;
+    margin: 10px;
+}
+
+/* Add to Cart button styling */
+.add-to-cart {
+    display: block;
+    padding: 10px 20px;
+    background-color: #007cba;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.add-to-cart:hover {
+    background-color: #005a8a;
+}
+
+
+.cafe-menu-thumbnail {
+    text-align: center; /* Center align thumbnail */
+}
+
+.cafe-menu-thumbnail img {
+    width: 100%; /* Ensure the image scales to the width of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #ddd; /* Optional border for separation */
+}
+
+
+/* Container for the product grid */
+.categorized-products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center the grid */
+}
+
+/* Styling for each product item */
+/* Container for product items, adjust as needed */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+    justify-content: space-between; /* Distribute items evenly */
+}
+
+/* Styling for individual product items */
+.product-item {
+    display: flex;
+    flex-direction: column; /* Stack image and content vertically */
+    align-items: center; /* Center align content */
+    border: 1px solid #ddd; /* Light border around items */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide any overflow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: calc(33.333% - 20px); /* 3 items per row with space for gap */
+    background-color: #fff; /* Background color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for product items */
+.product-item:hover {
+    transform: scale(1.02); /* Slightly scale up on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Styling for product images */
+.product-item img {
+    width: 100%; /* Ensure image covers the full width */
+    height: 200px; /* Fixed height for consistent image size */
+    object-fit: cover; /* Ensure image covers the container without distortion */
+    display: block; /* Remove extra space below image */
+}
+
+/* Container for product content (title, price, button) */
+.product-item .content {
+    padding: 15px; /* Padding around content */
+    text-align: center; /* Center align text and button */
+    flex: 1; /* Allows content to fill available space */
+}
+
+/* Styling for product titles */
+.product-item h2 {
+    font-size: 1.2em; /* Slightly larger font size */
+    margin: 10px 0; /* Margin around title */
+    color: #333; /* Dark text color */
+}
+
+/* Styling for product prices */
+.product-item .price {
+    font-size: 1.1em; /* Font size for price */
+    color: #f00; /* Red color for price */
+    margin: 10px 0; /* Margin around price */
+}
+
+/* Add to Cart button styling */
+.product-item .button {
+    display: inline-block; /* Inline-block to align properly */
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #007cba; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 1em; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.product-item .button:hover {
+    background-color: #005a87; /* Darker background color on hover */
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+    .product-item {
+        width: calc(50% - 20px); /* 2 items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        width: 100%; /* 1 item per row on very small screens */
+    }
+}
+
+
+
+/* Style for the cart button container */
+.cart-button {
+    float: right; /* Align to the right, adjust as needed */
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+/* Container for the single product page */
+<div id="product-<?php the_ID(); ?>"
+{ class="product">    margin: 20px 0;
+}
+
+/* Product image section */
+.woocommerce-product-gallery {
+    margin-bottom: 20px;
+}
+
+/* Product summary section */
+.product-summary {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Product title */
+.woocommerce-product-details__short-description {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Product price */
+.woocommerce-price {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Add to cart button */
+.single_add_to_cart_button {
+    background-color: #007cba;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.single_add_to_cart_button:hover {
+    background-color: #005a9c;
+}
+
+/* Product meta information */
+.product_meta {
+    margin-top: 20px;
+}
+
+/* Product tabs (Description, Additional Information, Reviews) */
+.woocommerce-tabs .panel {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Related products and upsells */
+.woocommerce ul.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.woocommerce ul.products li.product {
+    width: 24%;
+    margin: 0 1% 20px;
+    box-sizing: border-box;
+}
+
+.woocommerce ul.products li.product img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Container for the single product page */
+.single-product-container {
+    margin: 40px auto;
+}
+
+/* Product images section */
+.product-images {
+    padding: 20px;
+}
+
+/* Product summary section */
+.product-summary {
+    padding: 20px;
+    border-left: 1px solid #ddd;
+}
+
+.summary-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Enhance product title */
+.summary-inner .product_title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Enhance product price */
+.summary-inner .price {
+    font-size: 1.5em;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+/* Enhance add to cart button */
+.summary-inner .single_add_to_cart_button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.summary-inner .single_add_to_cart_button:hover {
+    background-color: #2980b9;
+}
+
+/* Product additional information section */
+.product-additional-info {
+    margin-top: 40px;
+}
+
+/* Tabs styling */
+.woocommerce-tabs .tabs {
+    border-bottom: 1px solid #ddd;
+}
+
+.woocommerce-tabs .tabs li {
+    margin-bottom: -1px;
+}
+
+.woocommerce-tabs .tabs a {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px 5px 0 0;
+    background: #f9f9f9;
+    color: #333;
+    font-weight: bold;
+}
+
+.woocommerce-tabs .tabs a:hover,
+.woocommerce-tabs .tabs .active a {
+    background: #fff;
+    border-color: #ddd;
+    color: #e74c3c;
+}
+
+/* Related products section */
+.upsells.products,
+.related.products {
+    margin-top: 40px;
+}
+
+
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.cart-sidebar.open {
+    transform: translateX(0);
+}
+
+.close-sidebar {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#cart-content {
+    padding: 20px;
+}
+
+
+
+/* Style for the cart link */
+.cart-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333; /* Change to your preferred color */
+    font-size: 16px; /* Adjust font size as needed */
+    padding: 8px 12px;
+    background-color: #f5f5f5; /* Background color for the button */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Style for the cart icon */
+.cart-link i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+/* Hover effect */
+.cart-link:hover {
+    background-color: #ddd; /* Change to your preferred hover color */
+    color: #000; /* Change to your preferred hover text color */
+}
+
+
+
+
+
+
+.logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 45px;
+    margin-right: 25px;
+    margin-top: 10px;
+
+  }
+  .site title h1{
+    font-size: 30px;
+    margin-bottom: 200px;
+    margin-left: 200px;
+    
+  } 
+  
+
+/* Styling for the unordered list of products */
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+    gap: 20px; /* Space between grid items */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for individual product items */
+.products .product {
+    border: 1px solid #ddd; /* Border around each product */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide any overflow */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+/* Hover effect to scale up the product */
+.products .product:hover {
+    transform: scale(1.05);
+}
+
+/* Image styling */
+.products .product img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+
+/* Title or other content styling */
+.products .product .woocommerce-loop-product__title {
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* For better responsiveness, adjust columns on smaller screens */
+@media (max-width: 1200px) {
+    .products {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .products {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}
+/* footer styling */
+.mycontainer{
+   text-align: center;
+}
+
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+   
+    margin-left: 500px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    color: red;
+    font-size: 14px;
+}
+
+
+/* General Checkout Form Styles */
+.woocommerce-checkout {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff; /* Light background color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.woocommerce-checkout h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Notices */
+.woocommerce-notices-wrapper {
+    margin-bottom: 20px;
+}
+
+.woocommerce-error,
+.woocommerce-message {
+    background: #f8d7da; /* Light red background for errors */
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.woocommerce-message {
+    background: #d4edda; /* Light green background for messages */
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+/* Customer Details Section */
+#customer_details {
+    margin-bottom: 30px;
+}
+
+.woocommerce-billing-fields,
+.woocommerce-shipping-fields {
+    background: #fafafa; /* Very light background color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.woocommerce-billing-fields h3,
+.woocommerce-shipping-fields h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Order Review Section */
+#order_review {
+    background: #fafafa; /* Very light background color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.woocommerce-checkout-review-order {
+    margin-bottom: 20px;
+}
+
+.order-total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Buttons */
+button[type="submit"],
+.woocommerce-checkout-payment .button {
+    background: #007cba;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover,
+.woocommerce-checkout-payment .button:hover {
+    background: #005a87;
+}
+
+/* Form Inputs */
+input.input-text,
+textarea {
+    border: 1px solid #ccc; /* Light border color */
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+input.input-text:focus,
+textarea:focus {
+    border-color: #007cba;
+    outline: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .woocommerce-checkout {
+        padding: 15px;
+    }
+
+    .woocommerce-billing-fields,
+    .woocommerce-shipping-fields,
+    #order_review {
+        padding: 15px;
+    }
+
+    button[type="submit"],
+    .woocommerce-checkout-payment .button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+
+
+
+/* General Styling */
+body .woocommerce-account {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Container for the account page */
+.woocommerce-account {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.woocommerce-account h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007cba;
+}
+
+/* Custom Content Section */
+.custom-content {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+/* Styling for the custom section */
+.custom-content h2 {
+    font-size: 1.5em;
+    color: #007cba;
+    margin-bottom: 10px;
+}
+
+.custom-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Styling for WooCommerce My Account Shortcode */
+.woocommerce-MyAccount-content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* WooCommerce Account Links */
+.woocommerce-MyAccount-navigation {
+    margin-bottom: 20px;
+}
+
+.woocommerce-MyAccount-navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.woocommerce-MyAccount-navigation li {
+    margin-bottom: 10px;
+}
+
+.woocommerce-MyAccount-navigation a {
+    color: #007cba;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+.woocommerce-MyAccount-navigation a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+

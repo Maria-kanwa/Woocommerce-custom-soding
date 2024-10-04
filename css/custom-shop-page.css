@@ -1,0 +1,34 @@
+.shop-page-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.shop-page-filters,
+.shop-page-categories {
+    width: 20%;
+    margin-right: 20px;
+}
+
+.shop-page-products {
+    width: 55%;
+}
+
+.product-categories-list {
+    list-style: none;
+    padding: 0;
+}
+
+.product-categories-list li {
+    margin-bottom: 10px;
+}
+
+.product-categories-list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.product-categories-list li a:hover {
+    color: #007cba; /* WooCommerce default blue color */
+}
